@@ -1,4 +1,7 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from "styled-components"
+
+import theme from "../src/theme"
+import MainNav from "../src/components/commons/MainNav"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -8,17 +11,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
-
 export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <MainNav />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

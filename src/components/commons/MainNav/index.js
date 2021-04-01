@@ -1,5 +1,5 @@
 import { NavWrapper, LinksList} from "./styles"
-import LogoSmall from "../../../theme/LogoSmall"
+import LogoInstaluraSmall from "../../../theme/LogoInstaluraSmall"
 import { Button } from "../Button"
 
 const links = [
@@ -21,7 +21,7 @@ const MainNav = () => {
    return (
       <NavWrapper>
          <NavWrapper.Brand href="/">
-            <LogoSmall />
+            <LogoInstaluraSmall />
          </NavWrapper.Brand>
          <NavWrapper.Buttons>
             <Button ghost variant="secondary.main">Entrar</Button>

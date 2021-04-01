@@ -7,7 +7,7 @@
 ### Recursos gerais pré-instalados para o projeto:
 - **STYLED-COMPONENTS** -> CSS in JS library
 - **LODASH** -> A modern JavaScript utility library delivering modularity, performance & extras
-
+- **STYLED-NORMALIZE** -> CSS-normalize library for styled-components.
 
 
 

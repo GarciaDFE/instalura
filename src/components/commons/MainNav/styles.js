@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const NavWrapper = styled.nav`
-   font-family: sans-serif;
    font-size: 14px;
    width: 100vw;
    display: flex;

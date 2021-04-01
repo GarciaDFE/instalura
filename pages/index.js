@@ -5,6 +5,8 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `
 
-export default function Home() {
+const Home = () => {
   return <Title>Home</Title>
 }
+
+export default Home

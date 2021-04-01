@@ -1,78 +1,39 @@
-# Example app with styled-components
+## TREINAMENTO JAMSTACK COM NEXTJS ALURA BOOTCAMP
+## PROJETO INSTALURA
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+### Principais tecnologias aplicadas no Desenvolvimento Front End
+- **NEXT JS** -> a free and open source framework based on **React** that helps developers build blazing fast websites and apps
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+### Recursos gerais pré-instalados para o projeto:
+- **STYLED-COMPONENTS** -> CSS in JS library
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- **SHARP** -> high performance image processing
+- **TYPOGRAPH** -> lib typograph with minimal configuration Google Fonts
+- **REACT-ICONS** -> include popular icons easly, which utilizes ES6 imports that allows you to include only the icons that your project is using
+- **STYLED-MEDIA-QUERY** -> media queries better than CSS @media for styled-components with ability to specify custom breakpoints
+- **NPROGRESS** -> automatically shows indicator when a page is delayed in loading
+- **MANIFEST** -> provides configuration and icons to the phone (part of the PWA specification) enabled by this plugin allows users to add your site to their home screen on most mobile browsers
+- **OFFLINE** -> add drop-in support for making site work offline e more resistant to bad network connections it creates a service worker for the site and loads into the client
+- **SITEMAP** -> create a sitemap for your site in production mode
+- **PAGE-CREATOR** -> automatically creates pages from React components in specified directories, any that lives in the specified pages folder/subfolders to generate a page and the following giles are automatically excluded and exclude custom patterns
+- **NETLIFY-PLUGIN-GATSBY-CACHE** -> Persist the Gatsby cache between Netlify builds for huge build speed improvements
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
+### Recursos instalados posteriormente específicos para o projeto:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-### Try it on CodeSandbox
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
 
-### Notes
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
 
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+- **REACT-HOOK-FORM** -> performant, flexible and extensible forms with easy-to-use validation.
+- **ZAPIER + SENDGRID** -> integration for Netlify send email handless free
+- **GLIDEJS** -> a dependency-free JavaScript ES6 slider and carousel. It’s lightweight, flexible and fast. Designed to slide. No less, no more.
+- **SOURCE-PRISMIC** -> source plugin for pulling data into Gatsby from prismic.io repositories.
+- **GATSBY-PLUGIN-INTL** -> Turn your gatsby site into an internationalization-framework out of the box powered by react-intl. Support automatic redirection based on the user’s preferred language in browser provided. Support multi-language url routes in a single page component. This means you don’t have to create separate pages.
+**GOOGLE-TAGMANAGER** -> easily add Google Tagmanager to your Gatsby site.
+**GATSBY-PLUGIN-ROBOTS-TXT** -> to make sure Google will crawl your site in the way you want it to.

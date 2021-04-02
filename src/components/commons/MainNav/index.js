@@ -1,6 +1,7 @@
 import { NavWrapper, LinksList} from "./styles"
 import LogoInstaluraSmall from "../../../theme/LogoInstaluraSmall"
 import { Button } from "../Button"
+import Text from "../../foundation/Text"
 
 const links = [
    {
@@ -32,7 +33,13 @@ const MainNav = () => {
                {links.map((link) => {
                   return (
                      <li key={link.label}>
-                        <a href={link.url}>{link.label}</a>
+                        <Text
+                           tag="a"
+                           variant="paragraphXS"
+                           href={link.url}
+                        >
+                           {link.label}
+                        </Text>
                      </li>
                   )
                })}

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components"
 import get from "lodash/get"
+import { textStyleVariantMap } from "../../foundation/Text"
 
 const ButtonDefault = css`
    background-color: ${props => get(props.theme, `colors.${props.variant}.color`)};
@@ -23,6 +24,8 @@ export const Button = styled.button`
    &:focus {
       opacity: 0.5;
    }
+
+   ${textStyleVariantMap.paragraphXS}
 
    ${function(props) {
       if(props.ghost) {
